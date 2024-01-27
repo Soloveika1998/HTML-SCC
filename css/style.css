@@ -1,0 +1,224 @@
+/*Обнуление*/
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+ :active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+
+/*--------------------*/
+
+@font-face {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: medium;
+    src: local('Gilroy'), url('../fonts/gilroy-medium.woff2') format('woff2'), url('../fonts/gilroy-medium.woff') format('woff'), url('../fonts/gilroy-medium.ttf') format('ttf'), url('../fonts/gilroy-medium.eot') format('eot');
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Gilroy'), url('../fonts/gilroy-semibold.woff2') format('woff2'), url('../fonts/gilroy-semibold.woff') format('woff'), url('../fonts/gilroy-semibold.ttf') format('ttf'), url('../fonts/gilroy-semibold.eot') format('eot');
+}
+
+.container {
+    font-family: 'Gilroy';
+    width: 1170px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 89px;
+}
+
+.logo__img {
+    margin-right: 14px;
+}
+
+.logo__text {}
+
+.main-menu {
+    margin-top: 11px;
+    margin-left: 9px;
+}
+
+.main-menu__list {
+    display: flex;
+    justify-content: space-between;
+    width: 533px;
+}
+
+.list__links {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.list__links:hover {
+    color: #F25822;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+}
+
+.services {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 162px;
+}
+
+.services__description {
+    width: 522px;
+    margin-right: 41px;
+}
+
+.description__title {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: normal;
+    margin-bottom: 17px;
+}
+
+.description_text {
+    color: #888;
+    font-size: 20px;
+    font-weight: medium;
+    line-height: normal;
+    width: 466px;
+    margin-bottom: 37px;
+}
+
+.description__buttons {}
+
+.buttons_orange {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: normal;
+    padding: 15px 36px 16px 35px;
+    margin-right: 72px;
+    border-radius: 50px;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+}
+
+.buttons_video {
+    color: #AAA;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: normal;
+    background: #FFF;
+}
+
+.buttons {}
+
+.buttons:hover {
+    color: #000000;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+}
+
+.bottom-logo {
+    padding-top: 97px;
+}
+
+.bottom-logo__container {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
